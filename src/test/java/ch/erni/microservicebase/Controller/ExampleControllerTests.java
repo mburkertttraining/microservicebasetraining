@@ -3,7 +3,6 @@ package ch.erni.microservicebase.Controller;
 import ch.erni.microservicebase.Model.Example;
 import ch.erni.microservicebase.Service.ExampleService;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -18,8 +17,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(MockitoJUnitRunner.class)
 public class ExampleControllerTests {
 
-    //TODO 06: Please take a second and analyze why this code was working the whole time even if a chained class was full of errors
-
     @Mock
     private ExampleService exampleService;
 
@@ -33,10 +30,9 @@ public class ExampleControllerTests {
 
     @Test
     public void exampleController_returns_correct_message() {
-        String testString = "I am a completed example!";
         Example testExample = new Example();
-        testExample.setCompletedExample(testString);
-        Mockito.when(exampleService.getCompletedExample(null)).thenReturn(testExample);
+        testExample.setCompletedExample("I am a completed example!");
+        Mockito.when(exampleService.getCompletedExample(Mockito.anyString())).thenReturn(testExample);
 
         String testResult = exampleController.exampleController();
 
@@ -45,10 +41,9 @@ public class ExampleControllerTests {
 
     @Test
     public void exampleController_returns_wrong_message() {
-        String testString = "I am a completed example to trick you!";
         Example testExample = new Example();
-        testExample.setCompletedExample(testString);
-        Mockito.when(exampleService.getCompletedExample(null)).thenReturn(testExample);
+        testExample.setCompletedExample("I am a completed example to trick you!");
+        Mockito.when(exampleService.getCompletedExample(Mockito.anyString())).thenReturn(testExample);
 
         String testResult = exampleController.exampleController();
 
