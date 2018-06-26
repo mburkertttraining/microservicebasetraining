@@ -48,7 +48,8 @@ public class ExampleControllerTests {
         String testString = "I am a completed example to trick you!";
         Example testExample = new Example();
         testExample.setCompletedExample(testString);
-        Mockito.when(exampleService.getCompletedExample(null)).thenReturn(testExample);
+        Mockito.when(exampleService.getCompletedExample(null))
+               .thenReturn(testExample);
 
         String testResult = exampleController.exampleController();
 
