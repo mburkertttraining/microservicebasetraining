@@ -96,7 +96,7 @@
                         to 'Low'.
                     -->
                     <!--TODO 03 please activate the failon error field off Findbugs again-->
-                    <failOnError>false</failOnError>
+                    <failOnError>true</failOnError>
                     <effort>Max</effort>
                     <!-- Reports all bugs (other values are medium and max) -->
                     <threshold>Low</threshold>
