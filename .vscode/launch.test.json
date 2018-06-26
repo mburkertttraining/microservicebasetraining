@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "microservicebase",
+                "projectName": "microservicebase",
+                "workingDirectory": "c:\\Users\\memi\\Documents\\ErniFolder\\Source\\EDD2018_2\\Microservices\\microservicebasetraining",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "microservicebase",
+                "projectName": "microservicebase",
+                "workingDirectory": "c:\\Users\\memi\\Documents\\ErniFolder\\Source\\EDD2018_2\\Microservices\\microservicebasetraining",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

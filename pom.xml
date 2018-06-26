@@ -80,7 +80,7 @@
                             <configLocation>checkstyle/checkstyle.xml</configLocation>
                             <suppressionsLocation>checkstyle/checkstyle-suppressions.xml</suppressionsLocation>
                             <!--TODO 01 Please activate Checkstyle buildfail caused by violations again -->
-                            <failOnViolation>false</failOnViolation>
+                            <failOnViolation>true</failOnViolation>
                         </configuration>
                     </execution>
                 </executions>
