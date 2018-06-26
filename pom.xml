@@ -79,8 +79,7 @@
                         <configuration>
                             <configLocation>checkstyle/checkstyle.xml</configLocation>
                             <suppressionsLocation>checkstyle/checkstyle-suppressions.xml</suppressionsLocation>
-                            <!--TODO 01 Please activate Checkstyle buildfail caused by violations again -->
-                            <failOnViolation>false</failOnViolation>
+                            <failOnViolation>true</failOnViolation>
                         </configuration>
                     </execution>
                 </executions>
@@ -95,8 +94,7 @@
                         If you run out of memory, changes the value of the effort element
                         to 'Low'.
                     -->
-                    <!--TODO 03 please activate the failon error field off Findbugs again-->
-                    <failOnError>false</failOnError>
+                    <failOnError>true</failOnError>
                     <effort>Max</effort>
                     <!-- Reports all bugs (other values are medium and max) -->
                     <threshold>Low</threshold>

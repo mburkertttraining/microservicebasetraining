@@ -17,9 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @RunWith(MockitoJUnitRunner.class)
 public class ExampleControllerTests {
-
-    //TODO 06: Please take a second and analyze why this code was working the whole time even if a chained class was full of errors
-
+    
     @Mock
     private ExampleService exampleService;
 
