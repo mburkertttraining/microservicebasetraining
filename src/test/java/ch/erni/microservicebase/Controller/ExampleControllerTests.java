@@ -3,7 +3,7 @@ package ch.erni.microservicebase.Controller;
 import ch.erni.microservicebase.Model.Example;
 import ch.erni.microservicebase.Service.ExampleService;
 import org.junit.Before;
-import org.junit.Ignore;
+//import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
